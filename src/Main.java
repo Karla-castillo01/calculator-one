@@ -33,7 +33,7 @@ public class Main {
 
         // CALCULATE
         // double result = Math.pow (base, exponent);
-        expectedMonthlyPaymentAmount = principalAmount * ((monthlyInterestRate* Math.pow((1 +monthlyInterestRate), numberOfPayments) / (Math.pow( (1+monthlyInterestRate), numberOfPayments) -1)));
+        expectedMonthlyPaymentAmount = principalAmount * ((monthlyInterestRate* Math.pow((1 + monthlyInterestRate), numberOfPayments) / (Math.pow( (1 + monthlyInterestRate), numberOfPayments) - 1)));
 
 //        This calculator would use a compounded interest formula.
 //        M=P×(i*(1+i)^n / ((1+i)^n)-1)
@@ -52,7 +52,7 @@ public class Main {
 //        interest paid
 
         // DISPLAY OUTPUTS
-        double totalInterestPaid =  (numberOfPayments* expectedMonthlyPaymentAmount) - principalAmount;
+        double totalInterestPaid =  (numberOfPayments * expectedMonthlyPaymentAmount) - principalAmount;
 
         System.out.printf("expected Monthly PaymentAmount: %.2f \n", expectedMonthlyPaymentAmount);
         System.out.printf("total Interest Paid: %.2f", totalInterestPaid);
